@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My project for the Goodwall ShareMyProject challenge.">
+  <title>My First Website | ShareMyProject</title>
+  <style>
+    :root { --ink: #24203b; --purple: #6545c5; --pink: #ffe8f0; --paper: #fffafc; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.6; }
+    header { padding: 20px 7%; display: flex; justify-content: space-between; align-items: center; gap: 12px; background: white; border-bottom: 1px solid #eee; }
+    .brand { font-weight: 800; color: var(--purple); letter-spacing: .3px; }
+    nav a { color: var(--ink); text-decoration: none; margin-left: 16px; font-size: .95rem; }
+    .hero { padding: 72px 7% 64px; background: linear-gradient(135deg, #f4edff, var(--pink)); }
+    .tag { display: inline-block; padding: 6px 12px; border-radius: 99px; background: white; color: var(--purple); font-weight: 700; font-size: .85rem; }
+    h1 { max-width: 720px; font-size: clamp(2.2rem, 8vw, 4.5rem); line-height: 1.08; margin: 18px 0; }
+    .hero p { max-width: 650px; font-size: 1.1rem; }
+    .button { display: inline-block; margin-top: 14px; background: var(--purple); color: white; padding: 12px 20px; border-radius: 10px; text-decoration: none; font-weight: 700; }
+    main { padding: 44px 7%; }
+    section { margin-bottom: 38px; }
+    h2 { font-size: 1.7rem; margin-bottom: 8px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; margin-top: 20px; }
+    .card { padding: 22px; border-radius: 16px; background: white; border: 1px solid #eee5f6; box-shadow: 0 6px 18px #30204d0b; }
+    .icon { font-size: 1.8rem; }
+    footer { text-align: center; padding: 24px 7%; background: #24203b; color: white; }
+    @media (max-width: 480px) { header { align-items: flex-start; flex-direction: column; } nav a { margin: 0 12px 0 0; } .hero { padding-top: 48px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">My First Website</div>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#project">My Project</a>
+      <a href="#goals">Goals</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="tag">Goodwall #ShareMyProject</span>
+    <h1>Hello, welcome to my project!</h1>
+    <p>This is my first website, created to share my ideas, what I am learning, and the positive impact I hope to make.</p>
+    <a class="button" href="#project">Explore my project</a>
+  </section>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am learning how to build and share projects online. This website is a first step in developing my digital skills, expressing my ideas, and turning them into something useful.</p>
+    </section>
+
+    <section id="project">
+      <h2>About My Project</h2>
+      <p><strong>Project name:</strong> My First Website</p>
+      <p><strong>Purpose:</strong> To create a simple online space where I can explain my project, share my progress, and learn web development.</p>
+      <div class="cards">
+        <article class="card"><div class="icon">💡</div><h3>My Idea</h3><p>I want to use creativity and technology to share ideas clearly and make useful information easier to find.</p></article>
+        <article class="card"><div class="icon">🛠️</div><h3>What I Am Doing</h3><p>I am starting with a simple website and learning how to publish it online using GitHub.</p></article>
+        <article class="card"><div class="icon">🌱</div><h3>What I Am Learning</h3><p>I am building confidence with digital tools, basic web design, and sharing my work with others.</p></article>
+      </div>
+    </section>
+
+    <section id="goals">
+      <h2>My Goals</h2>
+      <p>My next steps are to improve this website, add real details about my chosen project, and keep learning. This is a starting point, and I will update it as my project grows.</p>
+      <a class="button" href="https://github.com/">Visit GitHub</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with care for the Goodwall #ShareMyProject challenge.</p>
+  </footer>
+</body>
+</html>
